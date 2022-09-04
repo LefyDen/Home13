@@ -10,13 +10,13 @@ namespace Home13
             {
                 Console.WriteLine("Available actions: \n 1-Show Products \n 2-Add Product \n 3-Show Customers \n 4-Add Customer  \n 5 - Remove Customer \n 6-Buy Product");
                 int c = Convert.ToInt32(Console.ReadLine());
-                IInterface forSHowProduct = new Customers();
+                IInterface forSHowProduct = new Products();
                 IInterface forAddProduct = new Products();
-                IInterface forShowCustomers = new Products();
+                IInterface forShowCustomers = new Customers();
                 IInterface forAddCustomer = new Customers();
                 IInterface forRemoveCustomer = new Customers();
                 IInterface forBuy = new Products();
-                Check forCheck = new Check();
+                IInterface forCheck = new Check();
                 if (c == 1)
                 {
                     forSHowProduct.ShowProducts();

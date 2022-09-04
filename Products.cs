@@ -46,7 +46,7 @@ namespace Home13
         }            
             List<string> AllChecks = new List<string>();
             
-            public void ShowCheck()
+            void IInterface.ShowCheck()
             {
                 Console.WriteLine("Check of"  + bayer + ":");
                 Console.WriteLine("\n Item: " + item);
